@@ -9,13 +9,17 @@ class Program
          Console.WriteLine("Enter a list of numbers, Type O when finished.");
 
         List<int> numbers = new List<int>();
-        int response = 0;
+        int response = -1;
         do
         {
             Console.Write("Enter number: ");
             response = int.Parse(Console.ReadLine());
             
-            numbers.Add(response);
+            if (response!= 0)
+            {
+                numbers.Add(response);
+            }
+            
         } while (response != 0);
 
         int sum = 0;
@@ -26,7 +30,7 @@ class Program
 
         Console.WriteLine($"The sum is: {sum}");
 
-        float average = ((float)sum) / (numbers.Count-1);
+        float average = ((float)sum) / numbers.Count;
         Console.WriteLine($"The average is: {average}");
 
         int max = numbers[0];
