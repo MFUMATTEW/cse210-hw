@@ -64,7 +64,7 @@ class Program
                     break; 
 
                 default:  
-                    Console.WriteLine("Invalid opton. Please try again.");
+                    Console.WriteLine("Invalid option. Please try again.");
                     break;        
             }
 
