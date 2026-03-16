@@ -58,6 +58,12 @@ class Program
                     journal.SaveToFile(saveFile);
                     break;
 
+                case "4":
+                    Console.Write("Enter filename to load: ");
+                    string loadFile = Console.ReadLine();
+                    journal.LoadFromFile(loadFile);
+                    break;
+    
                 case "5":
                     running = false;
                     Console.WriteLine("Goodbye!");
