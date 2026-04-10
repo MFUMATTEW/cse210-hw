@@ -60,6 +60,8 @@ public class ReflectionActivity : Activity
     {
         DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
 
+        // Exceeding Requirement: I made sure no random prompts/questions are selected until they have all been used at least once in that session.
+        
         string lastQuestion = "";
         while (DateTime.Now < endTime)
         {
