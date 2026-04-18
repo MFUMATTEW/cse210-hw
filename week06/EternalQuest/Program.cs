@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        GoalManager command = new GoalManager();
+        command.Start();
     }
+
+    // Exceeding Requirement: I added phrases to motivate the user to achive goals from the checkListGoal class 
 }
